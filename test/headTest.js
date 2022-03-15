@@ -8,4 +8,12 @@ describe("#head", () => {
   it("returns '5' for ['5']", () => {
     assert.strictEqual(head(['5']), '5'); 
   });
+  it("returns 5 for [5, 6, 7]", () => {
+    const inputArray = [5, 2, 7];
+    assert.strictEqual(head(inputArray), 5);
+  });
+  it('returns Hello for ["Hello", "Lighthouse", "Labs"]', () => {
+    const inputArray = ["Hello", "Lighthouse", "Labs"];
+    assert.strictEqual(head(inputArray), "Hello");
+  });
 });
